@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Elegante - Sistema</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Restaurante Elegante</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Pedido Online</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#" class="btn">Peça Agora</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Manage Your Restaurant</h1>
+            <p>Delivery & Ordering System</p>
+            <a href="#" class="btn">Peça Agora</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('menu')">Menu</button>
+            <button class="tab-btn" onclick="openTab('cadastro')">Cadastro</button>
+            <button class="tab-btn" onclick="openTab('orders')">Pedidos</button>
+        </div>
+
+        <div id="menu" class="tab-content active">
+            <h2 class="section-title">Nosso Menu</h2>
+
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="../image/image.webp"
+                        alt="Salada Fresca">
+                    <div class="menu-item-content">
+                        <h3>Salada Fresca</h3>
+                        <p>Mix de folhas, tomate cereja, queijo feta e molho especial.</p>
+                        <span class="price">R$ 32,90</span>
+                        <button class="btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../image/images.jpg"
+                        alt="Penne ao Molho Pesto">
+                    <div class="menu-item-content">
+                        <h3>Penne ao Molho Pesto</h3>
+                        <p>Massa penne com molho pesto tradicional, tomates secos e pinoli.</p>
+                        <span class="price">R$ 45,90</span>
+                        <button class="btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../image/e86d578c10a72b81d766dd67c5b3.jpg"
+                        alt="Filé Mignon">
+                    <div class="menu-item-content">
+                        <h3>Filé Mignon</h3>
+                        <p>Filé mignon grelhado, com purê de batatas e legumes sauté.</p>
+                        <span class="price">R$ 89,90</span>
+                        <button class="btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="Panquecas">
+                    <div class="menu-item-content">
+                        <h3>Panquecas com Frutas</h3>
+                        <p>Panquecas americanas com frutas vermelhas e maple syrup.</p>
+                        <span class="price">R$ 28,90</span>
+                        <button class="btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="Pizza Margherita">
+                    <div class="menu-item-content">
+                        <h3>Pizza Margherita</h3>
+                        <p>Pizza artesanal com molho de tomate, muçarela e manjericão.</p>
+                        <span class="price">R$ 52,90</span>
+                        <button class="btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="Sobremesa">
+                    <div class="menu-item-content">
+                        <h3>Cheesecake de Frutas Vermelhas</h3>
+                        <p>Cheesecake cremoso com calda de frutas vermelhas.</p>
+                        <span class="price">R$ 24,90</span>
+                        <button class="btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cadastro" class="tab-content">
+            <h2 class="section-title">Cadastro de Cliente</h2>
+
+            <div class="form-section">
+                <form id="cadastro-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="Digite seu telefone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" placeholder="Digite seu endereço completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="Crie uma senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmar-senha">Confirmar Senha</label>
+                        <input type="password" id="confirmar-senha" placeholder="Confirme sua senha">
+                    </div>
+
+                    <button type="submit" class="btn">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="orders" class="tab-content">
+            <h2 class="section-title">Pedidos Recentes</h2>
+
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Cliente</th>
+                        <th>Pedido</th>
+                        <th>Valor</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25 de Abril, 2024</td>
+                        <td>João Silva</td>
+                        <td>Penne ao Molho Pesto</td>
+                        <td>R$ 45,90</td>
+                        <td>Entregue</td>
+                    </tr>
+                    <tr>
+                        <td>26 de Abril, 2024</td>
+                        <td>Maria Santos</td>
+                        <td>Filé Mignon + Salada Fresca</td>
+                        <td>R$ 122,80</td>
+                        <td>Em preparo</td>
+                    </tr>
+                    <tr>
+                        <td>26 de Abril, 2024</td>
+                        <td>Carlos Oliveira</td>
+                        <td>Pizza Margherita</td>
+                        <td>R$ 52,90</td>
+                        <td>Entregue</td>
+                    </tr>
+                    <tr>
+                        <td>27 de Abril, 2024</td>
+                        <td>Ana Costa</td>
+                        <td>Panquecas com Frutas + Suco Natural</td>
+                        <td>R$ 38,90</td>
+                        <td>A caminho</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="info-cards">
+            <div class="card">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 10:00–22:00</p>
+                <p>Sábado e Domingo: 11:00–23:00</p>
+            </div>
+
+            <div class="card">
+                <h3>Localização</h3>
+                <p>Dawn Hollow Trail, São Paulo - SP</p>
+                <p>CEP: 68909-525</p>
+            </div>
+
+            <div class="card">
+                <h3>Tipo de Cozinha</h3>
+                <p>Gourmet • Internacional • Massas</p>
+                <p>Pratos vegetarianos disponíveis</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Restaurante Elegante &copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            // Esconder todos os conteúdos de abas
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            // Desativar todos os botões de abas
+            var tabButtons = document.getElementsByClassName("tab-btn");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            // Ativar a aba selecionada
+            document.getElementById(tabName).classList.add("active");
+
+            // Ativar o botão da aba selecionada
+            event.currentTarget.classList.add("active");
+        }
+
+        // Menu mobile toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+        });
+
+        // Validação do formulário
+        document.getElementById('cadastro-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const senha = document.getElementById('senha').value;
+            const confirmarSenha = document.getElementById('confirmar-senha').value;
+
+            if (senha !== confirmarSenha) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+
+            alert('Cadastro realizado com sucesso!');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
